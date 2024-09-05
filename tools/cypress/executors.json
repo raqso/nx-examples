@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "cypress": {
+      "implementation": "./src/executors/cypress/executor",
+      "schema": "./src/executors/cypress/schema.json",
+      "description": "cypress executor"
+    }
+  }
+}

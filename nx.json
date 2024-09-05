@@ -43,6 +43,11 @@
     },
     "e2e-ci--**/*": {
       "dependsOn": ["^products:build"]
+    },
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   },
   "namedInputs": {
