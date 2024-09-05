@@ -5,10 +5,11 @@
   "projectType": "application",
   "targets": {
     "e3e": {
-      "executor": "@nx/cypress:cypress",
+      "executor": "@raqso/cypress:cypress",
       "options": {
         "testingType": "e2e",
-        "cypressConfig": "apps/cart-e2e/cypress.config.ts"
+        "cypressConfig": "apps/cart-e2e/cypress.config.ts",
+        "instances": 2
       }
     }
   },
